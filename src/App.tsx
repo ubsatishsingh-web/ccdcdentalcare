@@ -78,7 +78,7 @@ export default function App() {
       id: "pedigree",
       title: "5. Dr. Sabharwal's Pedigree",
       objective: "Build deep human connection & professional respect.",
-      trustBoosters: ["Fellow of International Congress of Oral Implantologists (ICOI)", "Post-grad credentials & 18 Years dedicated experience", "Direct hand-written promise of care"],
+      trustBoosters: ["Post-Graduate Certificate in Oral Implantology (PGCOI)", "18 Years of dedicated clinical experience", "Direct hand-written promise of care"],
       fearReducers: ["Treatment always directly led by Dr. Sabharwal", "Transparent diagnosis with digital scans", "No hidden specialists"],
       cta: "Read Dr. Sabharwal's painless commitment."
     },
@@ -352,7 +352,7 @@ export default function App() {
                       <div>
                         <span className="text-[10px] font-mono tracking-widest text-gold-400 uppercase font-semibold">Chief Surgeon</span>
                         <h3 className="font-serif text-lg font-medium tracking-wide mt-0.5">Dr. Vikramaditya Sabharwal</h3>
-                        <p className="text-xs text-brand-200">BDS, MDS · Implantologist & Aesthetic Architect</p>
+                        <p className="text-xs text-brand-200">BDS, PGCOI · Oral Implantologist</p>
                       </div>
                       <div className="bg-gold-500/20 border border-gold-500/40 p-1.5 rounded-lg shrink-0">
                         <Award className="h-5 w-5 text-gold-300" />
@@ -360,26 +360,19 @@ export default function App() {
                     </div>
                     <div className="mt-3 pt-3 border-t border-white/10 flex justify-between items-center text-[10px] text-slate-300">
                       <span className="flex items-center gap-1">
-                        <Activity className="h-3.5 w-3.5 text-emerald-400" />
-                        Painless Laser Protocol
+                        <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" />
+                        European Academy Certified
                       </span>
-                      <span className="font-mono text-gold-400">ICOI FELLOW</span>
+                      <span className="font-mono text-gold-400">PGCOI CERTIFIED</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Floating Experience Glass Card from Theme (Top-Right) */}
                 <div className="absolute top-4 right-4 glass-card p-3 rounded-xl shadow-lg border border-white/40">
-                  <div className="flex items-center gap-3">
-                    <div className="flex flex-col text-brand-950">
-                      <span className="text-xl font-bold font-mono">18+</span>
-                      <span className="text-[8px] uppercase font-bold tracking-tighter opacity-80">Years Exp</span>
-                    </div>
-                    <div className="h-6 w-[1px] bg-teal-300/40"></div>
-                    <div className="flex flex-col text-brand-950">
-                      <span className="text-xl font-bold font-mono">5k+</span>
-                      <span className="text-[8px] uppercase font-bold tracking-tighter opacity-80">Happy Patients</span>
-                    </div>
+                  <div className="flex flex-col text-brand-950 items-center px-2">
+                    <span className="text-xl font-bold font-mono">18+</span>
+                    <span className="text-[8px] uppercase font-bold tracking-tighter opacity-80 mt-0.5">Years Exp</span>
                   </div>
                 </div>
 
