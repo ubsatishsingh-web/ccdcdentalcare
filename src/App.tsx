@@ -340,16 +340,13 @@ export default function App() {
               <div className="absolute -inset-4 border border-teal-200/40 rounded-3xl -z-10 transform rotate-1 scale-[0.98] pointer-events-none" />
               <div className="absolute -inset-2 border border-brand-300/30 rounded-3xl -z-10 transform -rotate-1 scale-[1.01] pointer-events-none" />
               
-              <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl bg-brand-100 aspect-[3/4] border border-brand-200 doctor-frame">
+              <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-brand-50 to-brand-100 aspect-[3/4] border border-brand-200 doctor-frame flex flex-col justify-center items-center">
                 
-                {/* Doctor Portrait Image */}
-                <img 
-                  id="hero-doctor-image"
-                  src={DOCTOR_IMAGE} 
-                  alt="Dr. Vikramaditya Sabharwal - Centre For Complete Dental Care (CCDC)" 
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
-                />
+                {/* Minimalist Premium Placeholder in Center */}
+                <div className="mb-16 flex flex-col items-center opacity-40">
+                  <ShieldCheck className="h-16 w-16 text-brand-700/80 stroke-[1]" />
+                  <span className="font-serif tracking-widest text-[10px] uppercase text-brand-900 mt-3 font-light">CCDC CHANDIGARH</span>
+                </div>
 
                 {/* Glassmorphic Trust Plate Overlay on Image (Bottom) */}
                 <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-brand-950/95 via-brand-950/80 to-transparent">
