@@ -15,7 +15,8 @@ import {
   Globe, 
   Menu, 
   X,
-  ExternalLink 
+  ExternalLink,
+  Shield
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -52,9 +53,9 @@ export default function App() {
     },
     {
       id: "clinical",
-      title: "2. Swiss & Mayo Philosophy",
+      title: "2. Precision & Comfort Philosophy",
       objective: "Differentiate from standard dental clinics through medical science & comfort.",
-      trustBoosters: ["Computer-controlled local anesthesia (The Wand)", "Zero-fear sedation protocols", "Acoustic comfort headsets"],
+      trustBoosters: ["Computer-controlled local anesthesia", "Zero-fear sedation protocols", "Acoustic comfort headsets"],
       fearReducers: ["No needle terror", "Virtually zero sound during operations", "Empathetic, slow-paced medical care"],
       cta: "Learn about painless procedures."
     },
@@ -68,11 +69,11 @@ export default function App() {
     },
     {
       id: "tourism",
-      title: "4. Global Dental Tourism Elite",
-      objective: "Attract patients from Canada, USA, UK, Australia, and Middle East.",
-      trustBoosters: ["5-Star luxury hotel stay (Taj/Oberoi) fully managed", "Private chauffeur transfers from airport", "70% cost savings compared to western countries"],
-      fearReducers: ["Comprehensive travel insurance assistance", "Full transparent pricing beforehand", "English-fluent expert team"],
-      cta: "Download Dental Tourism concierge guide."
+      title: "4. Gentle Dental Experience",
+      objective: "Provide world-class treatment with zero discomfort.",
+      trustBoosters: ["18 Years of continuous clinical track record", "PRIME TIME Award for Best Implant & Laser Clinic", "ECHS Army Chandimandir empanelment"],
+      fearReducers: ["Empathetic, slow-paced dentistry", "Computerized anesthetic delivery systems", "Strict surgical-grade hygiene standards"],
+      cta: "Book your personalized treatment plan."
     },
     {
       id: "pedigree",
@@ -86,7 +87,7 @@ export default function App() {
       id: "gallery",
       title: "6. Rolex-Standard Gallery",
       objective: "Showcase perfect aesthetic results with absolute clinical transparency.",
-      trustBoosters: ["High-contrast, high-definition unedited smile makeovers", "Authentic patient video stories (NRI focused)"],
+      trustBoosters: ["High-contrast, high-definition unedited smile makeovers", "Authentic patient video stories"],
       fearReducers: ["No exaggerated photoshopping", "Real patients, real journeys, natural-looking results"],
       cta: "View smile makeover catalog."
     }
@@ -101,15 +102,15 @@ export default function App() {
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5 text-gold-300 font-medium">
               <span className="h-1.5 w-1.5 rounded-full bg-gold-400 animate-pulse" />
-              Swiss Painless Dentistry Protocol
+              Painless Precision Dentistry
             </span>
             <span className="hidden md:inline text-slate-400">|</span>
             <span className="hidden md:inline text-slate-300">ESTD. 2008 · Sector 19, Chandigarh</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-slate-300 flex items-center gap-1">
-              <Globe className="h-3 w-3 text-brand-300" />
-              Serving International Patients: CAN · UK · USA · AUS · UAE
+              <Shield className="h-3 w-3 text-brand-300" />
+              ECHS Army Chandimandir Empaneled
             </span>
           </div>
         </div>
@@ -249,9 +250,9 @@ export default function App() {
                 </h1>
               </div>
 
-              {/* Swiss Clinic Quality Stamp */}
+              {/* Clinic Quality Stamp */}
               <p className="font-sans text-base sm:text-lg md:text-xl text-slate-600 font-light max-w-2xl leading-relaxed pl-6">
-                Led by clinical pioneer <span className="font-medium text-brand-900">Dr. Vikramaditya Sabharwal</span>, CCDC combines state-of-the-art Swiss medical design with empathetic, zero-fear painless protocols in Chandigarh, India.
+                Led by clinical pioneer <span className="font-medium text-brand-900">Dr. Vikramaditya Sabharwal</span>, CCDC combines state-of-the-art dental precision with empathetic, zero-fear painless protocols in Chandigarh, India.
               </p>
 
               {/* Credibility Micro-Bullets */}
@@ -271,18 +272,18 @@ export default function App() {
                     <ShieldCheck className="h-3.5 w-3.5 text-gold-600" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-sm text-brand-950">International Standards</h4>
-                    <p className="text-xs text-slate-500">Sterilization audited to Swiss ISO levels</p>
+                    <h4 className="font-medium text-sm text-brand-950">Rigorous Sterilization</h4>
+                    <p className="text-xs text-slate-500">Surgical-grade autoclaves & cleanrooms</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <div className="h-6 w-6 rounded-full bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
-                    <Globe className="h-3.5 w-3.5 text-brand-600" />
+                    <Shield className="h-3.5 w-3.5 text-brand-600" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-sm text-brand-950">Worldwide Dentistry Concierge</h4>
-                    <p className="text-xs text-slate-500">Premium packages for Canada, UK & US NRIs</p>
+                    <h4 className="font-medium text-sm text-brand-950">ECHS Army Empaneled</h4>
+                    <p className="text-xs text-slate-500">Trusted clinical care for defense veterans</p>
                   </div>
                 </div>
 
@@ -311,11 +312,15 @@ export default function App() {
                 </a>
 
                 <div className="flex flex-col items-center sm:items-start text-center sm:text-left justify-center px-2">
-                  <div className="flex items-center gap-1">
-                    <span className="text-yellow-500 text-lg">★★★★★</span>
-                    <span className="text-xs font-semibold text-brand-950 ml-1">4.9/5 Rating</span>
-                  </div>
-                  <span className="text-[11px] text-slate-500">Based on 500+ premium local & NRI patient reviews</span>
+                  <a 
+                    href="https://share.google/t1abCeX7RiKtKkCd8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-semibold text-brand-950 hover:text-brand-600 underline flex items-center gap-1.5 transition-colors duration-200 cursor-pointer"
+                  >
+                    <span>Read Our Reviews on Google</span>
+                    <ExternalLink className="h-3.5 w-3.5 text-gold-600" />
+                  </a>
                 </div>
               </div>
 
@@ -468,7 +473,7 @@ export default function App() {
                 With a deep commitment to gentle surgical standards, Dr. Sabharwal has sculpted a pristine clinical reputation over 18 years of active surgical practice. His clinical path blends premium institutional wisdom with rich charitable service.
               </p>
 
-              {/* Swiss-styled Timeline Grid */}
+              {/* Career Timeline Grid */}
               <div className="relative border-l border-brand-200 pl-6 ml-3 space-y-8">
                 
                 {/* Milestone 1 */}
@@ -592,7 +597,7 @@ export default function App() {
             </h2>
             <div className="h-1 w-20 bg-brand-500 mx-auto mt-4 rounded-full" />
             <p className="font-sans text-sm md:text-base text-slate-500 max-w-2xl mx-auto pt-2">
-              Every procedure is calibrated to Swiss-grade medical standards, emphasizing absolute safety, zero discomfort, and long-term diagnostic perfection.
+              Every procedure is calibrated to premium clinical standards, emphasizing absolute safety, zero discomfort, and long-term diagnostic perfection.
             </p>
           </div>
 
@@ -810,7 +815,7 @@ export default function App() {
               ))}
             </div>
 
-            {/* Deep-Dive Interactive Swiss-styled Card (Right side) */}
+            {/* Deep-Dive Interactive Precision-styled Card (Right side) */}
             <div className="lg:col-span-7 bg-slate-50 border border-slate-200/60 rounded-2xl p-6 md:p-8 shadow-sm min-h-[400px] flex flex-col justify-between">
               
               {/* Dynamic Content */}
@@ -1014,17 +1019,17 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div className="space-y-2 p-6 rounded-xl bg-white/5 border border-white/10">
               <span className="text-xs font-mono text-gold-400 uppercase tracking-widest">Medical Quality</span>
-              <h3 className="font-serif text-xl font-light">Swiss Sterile Guarantee</h3>
+              <h3 className="font-serif text-xl font-light">Surgical Sterile Guarantee</h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Our clinic maintains surgical-grade cleanrooms, using state-of-the-art sterilization autoclaves and air purifiers compliant with Swiss dental association criteria.
+                Our clinic maintains surgical-grade cleanrooms, using state-of-the-art sterilization autoclaves and air purifiers to ensure flawless patient safety.
               </p>
             </div>
 
             <div className="space-y-2 p-6 rounded-xl bg-white/5 border border-white/10">
               <span className="text-xs font-mono text-gold-400 uppercase tracking-widest">Elite Service</span>
-              <h3 className="font-serif text-xl font-light">Global Dental Tourism</h3>
+              <h3 className="font-serif text-xl font-light">Global Patient Experience</h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Private chauffeur airport transfers from Delhi/Chandigarh, 5-Star luxury lodging assistance, customized North India itineraries, and comprehensive local guides.
+                Empathetic care, luxury lodging assistance, customized travel planning, and complete clinical guides to make your journey entirely seamless.
               </p>
             </div>
 
@@ -1039,7 +1044,7 @@ export default function App() {
 
           <div className="mt-12 pt-12 border-t border-white/10 text-center text-xs text-slate-400 space-y-3">
             <p className="font-serif tracking-widest uppercase text-gold-400 text-[10px]">Centre for Complete Dental Care (CCDC)</p>
-            <p>© 2026 CCDC Dental Clinic. Developed under Swiss medical aesthetics and precision dental guidelines.</p>
+            <p>© 2026 CCDC Dental Clinic. Built on medical aesthetics and precision dental guidelines.</p>
             <p className="text-[11px] opacity-70">
               Designed & Developed by{" "}
               <a 
