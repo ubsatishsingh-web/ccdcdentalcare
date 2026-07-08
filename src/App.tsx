@@ -333,59 +333,81 @@ export default function App() {
 
             </div>
 
-            {/* Right Doctor Image / Elegant Frame Column from Geometric Balance */}
+            {/* Right Clinical Excellence & Trust Card Column */}
             <div className="lg:col-span-5 relative flex justify-center">
               
               {/* Backing decorative lines (Tesla/Rolex geometry) */}
               <div className="absolute -inset-4 border border-teal-200/40 rounded-3xl -z-10 transform rotate-1 scale-[0.98] pointer-events-none" />
               <div className="absolute -inset-2 border border-brand-300/30 rounded-3xl -z-10 transform -rotate-1 scale-[1.01] pointer-events-none" />
               
-              <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-brand-50 to-brand-100 aspect-[3/4] border border-brand-200 doctor-frame">
+              <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl bg-white border border-brand-200/80 p-8 flex flex-col justify-between aspect-[3/4]">
                 
-                {/* Doctor Portrait Image */}
-                <img 
-                  id="hero-doctor-image"
-                  src={DOCTOR_IMAGE} 
-                  alt="Dr. Vikramaditya Sabharwal - Centre For Complete Dental Care (CCDC)" 
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
-                />
+                {/* Header Info */}
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <div className="space-y-1">
+                      <span className="font-mono text-[9px] font-bold tracking-widest text-gold-600 uppercase block">CCDC SWISS STANDARDS</span>
+                      <h3 className="font-serif text-2xl font-light text-brand-950 tracking-wide">Clinical Excellence</h3>
+                    </div>
+                    <div className="bg-brand-50 border border-brand-200 p-2 rounded-xl">
+                      <ShieldCheck className="h-6 w-6 text-brand-700" />
+                    </div>
+                  </div>
 
-                {/* Glassmorphic Trust Plate Overlay on Image (Bottom) */}
-                <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-brand-950/95 via-brand-950/80 to-transparent">
-                  <div className="backdrop-blur-sm bg-white/10 border border-white/10 rounded-xl p-4 text-white">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <span className="text-[10px] font-mono tracking-widest text-gold-400 uppercase font-semibold">Chief Surgeon</span>
-                        <h3 className="font-serif text-lg font-medium tracking-wide mt-0.5">Dr. Vikramaditya Sabharwal</h3>
-                        <p className="text-xs text-brand-200">BDS, PGCOI · Oral Implantologist</p>
+                  <div className="h-[1px] bg-gradient-to-r from-brand-100 via-brand-200 to-transparent" />
+                  
+                  {/* Trust Pillars */}
+                  <div className="space-y-5 py-2">
+                    
+                    {/* Pillar 1 */}
+                    <div className="flex gap-4">
+                      <div className="h-5 w-5 rounded-full bg-brand-50 border border-brand-200 flex items-center justify-center shrink-0 mt-0.5">
+                        <Award className="h-3 w-3 text-brand-700" />
                       </div>
-                      <div className="bg-gold-500/20 border border-gold-500/40 p-1.5 rounded-lg shrink-0">
-                        <Award className="h-5 w-5 text-gold-300" />
+                      <div className="space-y-1">
+                        <h4 className="text-xs font-semibold text-brand-950 tracking-wide uppercase font-sans">18+ Years Medical Pedigree</h4>
+                        <p className="text-[11px] text-slate-500 leading-relaxed font-light">
+                          Directed by Chief Surgeon <span className="font-medium text-brand-900">Dr. Vikramaditya Sabharwal</span>.
+                        </p>
                       </div>
                     </div>
-                    <div className="mt-3 pt-3 border-t border-white/10 flex justify-between items-center text-[10px] text-slate-300">
-                      <span className="flex items-center gap-1">
-                        <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" />
-                        European Academy Certified
-                      </span>
-                      <span className="font-mono text-gold-400">PGCOI CERTIFIED</span>
+
+                    {/* Pillar 2 */}
+                    <div className="flex gap-4">
+                      <div className="h-5 w-5 rounded-full bg-brand-50 border border-brand-200 flex items-center justify-center shrink-0 mt-0.5">
+                        <Sparkles className="h-3 w-3 text-gold-600" />
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className="text-xs font-semibold text-brand-950 tracking-wide uppercase font-sans">Zero-Fear Painless Protocol</h4>
+                        <p className="text-[11px] text-slate-500 leading-relaxed font-light">
+                          Microscopic endodontics, computerized anesthesia, & acoustic comfort.
+                        </p>
+                      </div>
                     </div>
+
+                    {/* Pillar 3 */}
+                    <div className="flex gap-4">
+                      <div className="h-5 w-5 rounded-full bg-brand-50 border border-brand-200 flex items-center justify-center shrink-0 mt-0.5">
+                        <Globe className="h-3 w-3 text-brand-700" />
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className="text-xs font-semibold text-brand-950 tracking-wide uppercase font-sans">International Patient Care</h4>
+                        <p className="text-[11px] text-slate-500 leading-relaxed font-light">
+                          Bespoke concierge services for USA, Canada, UK, & Australian dental tourists.
+                        </p>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
 
-                {/* Floating Experience Glass Card from Theme (Top-Right) */}
-                <div className="absolute top-4 right-4 glass-card p-3 rounded-xl shadow-lg border border-white/40">
-                  <div className="flex flex-col text-brand-950 items-center px-2">
-                    <span className="text-xl font-bold font-mono">18+</span>
-                    <span className="text-[8px] uppercase font-bold tracking-tighter opacity-80 mt-0.5">Years Exp</span>
+                {/* Footer Badge block */}
+                <div className="mt-4 pt-4 border-t border-brand-100 flex items-center justify-between">
+                  <div className="flex items-center gap-1.5">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="font-mono text-[9px] text-slate-500 uppercase tracking-widest">Active & Accredited</span>
                   </div>
-                </div>
-
-                {/* Floating Micro-Badge */}
-                <div className="absolute top-4 left-4 bg-brand-500/90 backdrop-blur-md text-white text-[10px] font-mono tracking-wider uppercase py-1 px-2.5 rounded-full border border-brand-400/30 flex items-center gap-1 shadow-lg">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  Clinically Active
+                  <span className="font-serif text-[10px] text-gold-600 uppercase tracking-wider font-light">Sector 19, Chandigarh</span>
                 </div>
 
               </div>
@@ -468,8 +490,73 @@ export default function App() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             
-            {/* Timeline Career Column (Left 7-columns) */}
-            <div className="lg:col-span-7 space-y-8">
+            {/* Doctor Portrait & Quote Column (Shown first on mobile, right column on desktop) */}
+            <div className="lg:col-span-5 lg:order-2 space-y-8 w-full">
+              
+              {/* Doctor Portrait Card - High Trust Presentation */}
+              <div className="relative w-full max-w-sm mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-brand-50 to-brand-100 aspect-[3/4] border border-brand-200 group">
+                <img 
+                  src={DOCTOR_IMAGE} 
+                  alt="Dr. Vikramaditya Sabharwal - Chief Surgeon & Director" 
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                />
+                
+                {/* Glassmorphic overlay for instant clinical credibility */}
+                <div className="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-brand-950/90 via-brand-950/40 to-transparent">
+                  <div className="backdrop-blur-md bg-black/20 border border-white/10 rounded-xl p-3 text-white">
+                    <span className="text-[9px] font-mono tracking-widest text-gold-400 uppercase font-semibold">Chief Surgeon & Founder</span>
+                    <h3 className="font-serif text-base font-medium tracking-wide mt-0.5">Dr. Vikramaditya Sabharwal</h3>
+                    <p className="text-[11px] text-brand-200">BDS, PGCOI · Oral Implantologist</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Warm styled quote block */}
+              <div className="glass-card bg-brand-100/40 border border-brand-200/50 p-8 rounded-2xl relative shadow-md">
+                
+                {/* Visual quote mark indicator */}
+                <div className="absolute -top-6 -left-2 text-[100px] font-serif text-brand-200/40 leading-none select-none">
+                  “
+                </div>
+
+                <div className="relative z-10 space-y-6">
+                  
+                  {/* Quote Text */}
+                  <blockquote className="font-serif text-lg md:text-xl font-light italic leading-relaxed text-brand-950">
+                    &ldquo;We are strongly concerned to a patient's pain and its dental complaints throughout the dental treatment and try to make the procedures easy, painless and comfortable for the patient so that a relation of full faith and fairness can be built between patient and the doctor!&rdquo;
+                  </blockquote>
+
+                  {/* Concluding slogan highlight */}
+                  <div className="border-t border-brand-200/40 pt-4">
+                    <p className="font-sans text-sm font-bold text-gold-600 tracking-wide uppercase">
+                      &ldquo;So Smile, because the world Smiles with YOU!!&rdquo;
+                    </p>
+                  </div>
+
+                  {/* Signature / Credentials block */}
+                  <div className="flex items-center gap-3 pt-2">
+                    <div className="h-10 w-10 rounded-full overflow-hidden border border-brand-300">
+                      <img 
+                        src={DOCTOR_IMAGE} 
+                        alt="Dr. Vikramaditya Sabharwal Signature Avatar" 
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h5 className="font-serif text-sm font-semibold text-brand-950">Dr. Vikramaditya Sabharwal</h5>
+                      <span className="font-mono text-[9px] tracking-wider text-slate-500 uppercase">Director & Founder, CCDC</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            {/* Timeline Career Column (Shown second on mobile, left column on desktop) */}
+            <div className="lg:col-span-7 lg:order-1 space-y-8">
               <p className="text-base md:text-lg font-light leading-relaxed text-slate-600">
                 With a deep commitment to gentle surgical standards, Dr. Sabharwal has sculpted a pristine clinical reputation over 18 years of active surgical practice. His clinical path blends premium institutional wisdom with rich charitable service.
               </p>
@@ -527,50 +614,6 @@ export default function App() {
                       Advanced specialization in pain-free microscopic root canal treatment (RCT) protocols, assuring extreme therapeutic precision.
                     </p>
                   </div>
-                </div>
-
-              </div>
-            </div>
-
-            {/* Warm styled quote block (Right 5-columns) */}
-            <div className="lg:col-span-5">
-              <div className="glass-card bg-brand-100/40 border border-brand-200/50 p-8 rounded-2xl relative shadow-md">
-                
-                {/* Visual quote mark indicator */}
-                <div className="absolute -top-6 -left-2 text-[100px] font-serif text-brand-200/40 leading-none select-none">
-                  “
-                </div>
-
-                <div className="relative z-10 space-y-6">
-                  
-                  {/* Quote Text */}
-                  <blockquote className="font-serif text-lg md:text-xl font-light italic leading-relaxed text-brand-950">
-                    &ldquo;We are strongly concerned to a patient's pain and its dental complaints throughout the dental treatment and try to make the procedures easy, painless and comfortable for the patient so that a relation of full faith and fairness can be built between patient and the doctor!&rdquo;
-                  </blockquote>
-
-                  {/* Concluding slogan highlight */}
-                  <div className="border-t border-brand-200/40 pt-4">
-                    <p className="font-sans text-sm font-bold text-gold-600 tracking-wide uppercase">
-                      &ldquo;So Smile, because the world Smiles with YOU!!&rdquo;
-                    </p>
-                  </div>
-
-                  {/* Signature / Credentials block */}
-                  <div className="flex items-center gap-3 pt-2">
-                    <div className="h-10 w-10 rounded-full overflow-hidden border border-brand-300">
-                      <img 
-                        src={DOCTOR_IMAGE} 
-                        alt="Dr. Vikramaditya Sabharwal Signature Avatar" 
-                        referrerPolicy="no-referrer"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h5 className="font-serif text-sm font-semibold text-brand-950">Dr. Vikramaditya Sabharwal</h5>
-                      <span className="font-mono text-[9px] tracking-wider text-slate-500 uppercase">Director & Founder, CCDC</span>
-                    </div>
-                  </div>
-
                 </div>
 
               </div>
