@@ -344,6 +344,7 @@ export default function App() {
                 
                 {/* Doctor Portrait Image */}
                 <img 
+                  id="hero-doctor-image"
                   src={DOCTOR_IMAGE} 
                   alt="Dr. Vikramaditya Sabharwal - Centre For Complete Dental Care (CCDC)" 
                   referrerPolicy="no-referrer"
