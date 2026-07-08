@@ -1,0 +1,6 @@
+{
+  "name": "Centre For Complete Dental Care",
+  "description": "Premium dental tourism and precision dentistry clinic in Chandigarh led by Dr. Vikramaditya Sabharwal, offering world-class painless dental treatments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
